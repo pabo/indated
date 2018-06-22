@@ -1,0 +1,21 @@
+{
+  "name": "indated",
+  "version": "1.0.0",
+  "description": "report on how outdated your dependencies are",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pabo/indated.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "indated": "index.js"
+  },
+  "author": "brett.schellenberg@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "markdown-table": "~1.1.2"
+  }
+}
