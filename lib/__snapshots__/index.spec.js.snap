@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`generateDataTable should generate data table for all differences 1`] = `
+Array [
+  Array [
+    "react",
+    "major",
+    1,
+  ],
+  Array [
+    "some-minor-package",
+    "minor",
+    2,
+  ],
+  Array [
+    "jest-enforce",
+    "patch",
+    7,
+  ],
+]
+`;
+
+exports[`generateDataTable should generate data table for major differences 1`] = `
+Array [
+  Array [
+    "react",
+    "major",
+    1,
+  ],
+]
+`;
+
+exports[`generateDataTable should generate data table for minor differences 1`] = `
+Array [
+  Array [
+    "some-minor-package",
+    "minor",
+    2,
+  ],
+]
+`;
+
+exports[`generateDataTable should generate data table for patch differences 1`] = `
+Array [
+  Array [
+    "jest-enforce",
+    "patch",
+    7,
+  ],
+]
+`;
