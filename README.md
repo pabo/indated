@@ -1,18 +1,38 @@
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/pabo/indated/blob/master/LICENSE) [![Coverage Status](https://img.shields.io/badge/dynamic/json.svg?label=coverage&url=https%3A%2F%2Fraw.githubusercontent.com%2Fpabo%2Findated%2Fnext%2Fcoverage%2Fcoverage-summary.json&query=%24.total.lines.pct&suffix=%)](https://github.com/pabo/indated/blob/master/coverage/coverage-summary.json) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/pabo/indated/)
+
 # Indated
-## it's way better than being outdated
 
-Analyze your npm project's dependencies to determine how far behind you are.
+It's better to be indated than outdated!
+
+Analyze your npm project's dependencies to determine how many major/minor/patch versions behind each one is.
 
 
-### Installation
+## Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Options](#options)
+- [Example Output](#example-output)
+- [License](#license)
+
+---
+
+## Installation
+
 ```
 $ npm install --save-dev indated
 ```
 
-### Usage
+## Usage
+
 assuming you have `./node_modules/.bin/` in your path, just run
 ```
 $ indated
+```
+
+or, if you have npm > 5.2.0
+```
+$ npx indated
 ```
 
 otherwise, run
@@ -20,7 +40,8 @@ otherwise, run
 $ node_modules/.bin/indated
 ```
 
-### Options
+## Options
+
 By default, `indated` will generate a markdown table listing your project's dependencies that are one or more **major** versions behind the latest available. It does this by leveraging output from `npm outdated`.
 
 You can easily add **minor** and **patch** versions to the output with `--minor` and `--patch`, and disable **major** with `--no-major`.
@@ -29,3 +50,17 @@ Example: show all dependencies that differ from latest only by minor version:
 ```
 $ indated --no-major --minor
 ```
+
+## Example Output
+
+```
+$ indated --major --minor
+building package tree... (this may take a while)
+| package | level | difference |
+| ------- | ----- | ---------- |
+| jest    | minor | 1          |
+```
+
+## License
+
+This project is licensed under the [MIT License](./LICENSE)
