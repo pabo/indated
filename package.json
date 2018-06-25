@@ -1,6 +1,6 @@
 {
   "name": "indated",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Analyze your project's dependencies to determine how many major/minor/patch versions behind each one is",
   "main": "cli.js",
   "repository": {
