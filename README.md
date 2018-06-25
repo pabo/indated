@@ -13,6 +13,7 @@ Analyze your npm project's dependencies to determine how many major/minor/patch 
 - [Usage](#usage)
 - [Options](#options)
 - [Example Output](#example-output)
+- [License](#license)
 
 ---
 
@@ -59,3 +60,7 @@ building package tree... (this may take a while)
 | ------- | ----- | ---------- |
 | jest    | minor | 1          |
 ```
+
+## License
+
+This project is licensed under the [MIT License](./LICENSE)
