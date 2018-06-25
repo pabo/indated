@@ -6,17 +6,15 @@ It's better to be indated than outdated!
 
 Analyze your npm project's dependencies to determine how many major/minor/patch versions behind each one is.
 
+
+## Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Options](#options)
+- [Example Output](#example-output)
+
 ---
-<!-- TOC -->
-
-- [Indated](#indated)
-  - [Contents](#contents)
-  - [Installation](#installation)
-  - [Usage](#usage)
-  - [Options](#options)
-  - [Example Output](#example-output)
-
-<!-- /TOC -->
 
 ## Installation
 
